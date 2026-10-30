@@ -2,7 +2,10 @@
 *.py text eol=lf
 *.md text eol=lf
 *.json text eol=lf
+*.txt text eol=lf
 *.csv -text
 *.names -text
 *.png binary
 *.pdf binary
+# Matplotlib emits harmless spaces inside multiline SVG path attributes.
+*.svg -whitespace

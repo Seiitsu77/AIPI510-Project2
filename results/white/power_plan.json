@@ -1,0 +1,12 @@
+{
+  "assumed_dz": 0.2,
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "alternative": "larger",
+  "required_pairs_continuous": 155.92567158567604,
+  "required_pairs": 156,
+  "planned_test_pairs": 793,
+  "sufficient_at_assumed_effect": true,
+  "design_power_at_assumed_dz": 0.9999658857329762,
+  "assumptions": "Independent paired differences; normal-difference planning model; dz=.20 is assumed, never estimated from final outcomes."
+}

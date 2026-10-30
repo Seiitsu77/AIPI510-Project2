@@ -1,0 +1,78 @@
+{
+  "dataset": "red",
+  "evaluation_started_at_utc": "2026-10-30T04:11:45.501908+00:00",
+  "evaluation_completed_at_utc": "2026-10-30T04:11:47.128125+00:00",
+  "prepared_at_utc": "2026-10-30T04:09:06.807305+00:00",
+  "n_train": 1087,
+  "n_test": 272,
+  "design": {
+    "config": {
+      "seed": 42,
+      "test_size": 0.2,
+      "k": 5,
+      "weights": "uniform",
+      "metric": "euclidean",
+      "algorithm": "brute",
+      "n_jobs": 1,
+      "alpha": 0.05,
+      "target_power": 0.8,
+      "assumed_dz": 0.2,
+      "bootstrap_seed": 4242,
+      "bootstrap_resamples": 10000
+    },
+    "features": [
+      "fixed acidity",
+      "volatile acidity",
+      "citric acid",
+      "residual sugar",
+      "chlorides",
+      "free sulfur dioxide",
+      "total sulfur dioxide",
+      "density",
+      "pH",
+      "sulphates",
+      "alcohol"
+    ],
+    "raw_sha256": "4a402cf041b025d4566d954c3b9ba8635a3a8a01e039005d97d6a710278cf05e",
+    "analysis_plan_sha256": "bdfb99e9c2cedadab718e7a2cbfe0edb95cfa7c9147ce8fba2e0a98da669badf"
+  },
+  "prepared_design_sha256": "f3c8666a59655e533497d941ceacd3ad7fc6cd31e89910ed42386467986d5b2e",
+  "python": "3.13.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "git_head_at_run": "63f3248110f88d366cd5c00ed67d1d3b1a7c34a4",
+  "requirements_sha256": "dba5282dd5c31f7bcc9e846da7b055b65b30db585d9fac0c71850a30ac8f8b03",
+  "analysis_source_sha256": {
+    "scripts/run_experiment.py": "3e40aa2ed5beaa10a1daeb2a08adc95a3b8711b34f23136e29c4ec4e783bf74c",
+    "src/wine_scaling/__init__.py": "df6ffe7ef28b61e8cee4a9c9dcafded6f98bc510e60a462e8bc3ce1474ef73ec",
+    "src/wine_scaling/config.py": "2fc169103d34db0d99f3daffea6d4e695c39506bb7d72523e458c015f53d6c33",
+    "src/wine_scaling/data.py": "d0fb78fd97a3c8d57501bd1bd6d48171eb9facb280c7be0f0cdb804f53f02264",
+    "src/wine_scaling/experiment.py": "b75d88bf577ee896adf07427ddfb6e13c00623bc6f899c0b230b907d51b2f721",
+    "src/wine_scaling/io.py": "056bc0cd64c5bec4c8634a10a7d8505485f1dc19cd4fe98ffbfb073e4e744a6b",
+    "src/wine_scaling/models.py": "3aaf2399d96040cce3b1eb4c20287084fc90e57314f1021351dd3277ab1b1ead",
+    "src/wine_scaling/plots.py": "3d3dba9b7ff53c6d072e2f29248128b6cf48518f0929467d0a9a5e28b97ef0e7",
+    "src/wine_scaling/power.py": "5315f9e46a9b4d5b2056b7a8c2bb16c45b0356f70e983806d8b6d3f03b9d3354",
+    "src/wine_scaling/reporting.py": "c10ea34f5b90666da775b74fc187440d410db98f072642a31c60fcfdc57489cd",
+    "src/wine_scaling/statistics.py": "ba3ee11ce48bb8556d22574cc79cf7893c25696b32fa92feae499590b38122d4"
+  },
+  "artifact_sha256": {
+    "data_audit.json": "2098c9546c94e827e840ca24c76d1f908c03e59aa4aa7626e4d270296e2e57eb",
+    "duplicate_map.csv": "911fd4019c681420b9ff835feb2df741201ab3962a1726c80cee4937ab0626a3",
+    "inference.json": "c7ed82685db3b4d884090adc2a7257974ded00182b058d8cccc0a86a58f62c1f",
+    "metrics.csv": "888ba66855cc08a73066380067b769ea9b8f4fbd31eb29c2b72018d81cc9aa7a",
+    "power_plan.json": "e03539ac448e86d6625f3e03ed3ac886ee4c92f9d755eb537abae82ba51811df",
+    "predictions.csv": "830d2e0469b0c410aece8ec9714423eb52fa2771d9bae131f6898d9cfcdc849b",
+    "prepared_design.json": "f3c8666a59655e533497d941ceacd3ad7fc6cd31e89910ed42386467986d5b2e",
+    "scaler_training_statistics.json": "a0c3d2c8b14a0e6d78b533f27a16e9f7863c7ef06334e911a55cb6fd8c7c49ab",
+    "split_membership.csv": "7cfbc95532ff2b6f2bc9c45ae711248ddbcf9c3b9f637652b7529ed416fe2b2f"
+  },
+  "interpretation_scope": "Conditional on this fitted training set; independence of distinct wine records assumed, not proven."
+}
