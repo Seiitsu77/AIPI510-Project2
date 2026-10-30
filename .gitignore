@@ -1,0 +1,11 @@
+.venv/
+.tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+# Original supplied folder is preserved locally; canonical copies are in data/raw.
+wine+quality/
