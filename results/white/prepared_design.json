@@ -1,0 +1,41 @@
+{
+  "identity": {
+    "config": {
+      "seed": 42,
+      "test_size": 0.2,
+      "k": 5,
+      "weights": "uniform",
+      "metric": "euclidean",
+      "algorithm": "brute",
+      "n_jobs": 1,
+      "alpha": 0.05,
+      "target_power": 0.8,
+      "assumed_dz": 0.2,
+      "bootstrap_seed": 4242,
+      "bootstrap_resamples": 10000
+    },
+    "features": [
+      "fixed acidity",
+      "volatile acidity",
+      "citric acid",
+      "residual sugar",
+      "chlorides",
+      "free sulfur dioxide",
+      "total sulfur dioxide",
+      "density",
+      "pH",
+      "sulphates",
+      "alcohol"
+    ],
+    "raw_sha256": "76c3f809815c17c07212622f776311faeb31e87610d52c26d87d6e361b169836",
+    "analysis_plan_sha256": "bdfb99e9c2cedadab718e7a2cbfe0edb95cfa7c9147ce8fba2e0a98da669badf"
+  },
+  "dataset": "white",
+  "prepared_at_utc": "2026-10-30T04:09:06.867326+00:00",
+  "n_train": 3168,
+  "n_test": 793,
+  "clean_sha256": "7794354e9ebefa36542f33e8306dfb13adc43fec7c70548507384025d62baac2",
+  "split_sha256": "8b11181d3aca15fbcb42408cab70211434eb00da100f16b73c7b9845a0f5b69c",
+  "power_sha256": "51fd11804bbdfb8b1e7074d1a6cce00bcbd535865b5d2a1cc7d30fa3c8b2cd6e",
+  "serialization_note": "CRLF outputs normalized to LF after initial evaluation for Git portability; statistical design and original preparation time unchanged."
+}

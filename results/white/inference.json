@@ -1,0 +1,46 @@
+{
+  "n_pairs": 793,
+  "mean_difference": 0.08852459016393441,
+  "sd_difference": 0.4864652626143195,
+  "se_difference": 0.017274887988622204,
+  "t_statistic": 5.124466811144567,
+  "degrees_of_freedom": 792,
+  "p_value_one_sided": 1.8759256397764596e-07,
+  "alpha": 0.05,
+  "reject_null": true,
+  "cohens_dz": 0.1819751521171177,
+  "ci_95_two_sided": [
+    0.05461461071548901,
+    0.1224345696123798
+  ],
+  "lower_bound_95_one_sided": 0.06007665281694151,
+  "bootstrap_ci_95_percentile": [
+    0.05523329129886509,
+    0.12307692307692307
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 4242,
+  "skewness": 0.09027936399121524,
+  "excess_kurtosis": 0.5143912178477601,
+  "shapiro_w": 0.9821422521287404,
+  "shapiro_p_descriptive": 2.9536838314827922e-08,
+  "quantiles": {
+    "min": -1.5999999999999996,
+    "q1": -0.20000000000000018,
+    "median": 0.0,
+    "q3": 0.40000000000000036,
+    "max": 1.7999999999999998
+  },
+  "positive_pairs": 375,
+  "zero_pairs": 152,
+  "negative_pairs": 266,
+  "unique_difference_values": 18,
+  "leave_one_out_mean_range": [
+    0.08636363636363635,
+    0.09065656565656563
+  ],
+  "wilcoxon": {
+    "performed": false,
+    "reason": "Not prespecified as an inferential check: symmetry/location-shift assumptions unestablished; discrete differences have ties/zeros. Paired bootstrap instead targets the mean."
+  }
+}
