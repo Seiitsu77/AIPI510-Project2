@@ -52,8 +52,6 @@ Windows PowerShell (activation is unnecessary):
 ```powershell
 git clone https://github.com/Seiitsu77/AIPI510-Project2.git
 cd AIPI510-Project2
-# While the implementation PR is under review:
-git switch experiment/knn-feature-scaling
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe scripts/run_experiment.py --dataset both --stage prepare
@@ -145,6 +143,8 @@ and a normal Q–Q diagnostic for each cohort. Use SVG for resizing and editing,
 or the 300 dpi PNG for slides. The interval chart displays uncertainty about the
 paired mean; the boxplot displays observation spread. No Wilcoxon p-value is
 reported because symmetry/location-shift assumptions are unestablished.
+
+Independent validation: `python scripts/validate_independent.py` (writes `results/validation/`) recomputes the primary results and also reports exploratory sensitivity checks (Wilcoxon, sign test) that are not part of the primary analysis. The abstract and recommendations are in `reports/abstract_and_recommendations.md`.
 
 ## Validity and collaboration
 

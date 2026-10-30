@@ -1,0 +1,456 @@
+{
+  "red": {
+    "dataset": "red",
+    "all_primary_checks_passed": true,
+    "checks": [
+      {
+        "check": "n pairs",
+        "passed": true,
+        "detail": "272 vs 272"
+      },
+      {
+        "check": "saved difference column = |err unscaled| - |err scaled|",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "mean difference",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "SD of differences",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "t statistic",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "one-sided p-value",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "two-sided 95% CI",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "Cohen's dz",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "MAE (both arms)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "RMSE (both arms)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "reject decision (one-sided alpha)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "required pairs (continuous)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "required pairs (rounded up)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "design power at assumed dz",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "test set >= required pairs",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "predictions rows are the test split, in order",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "refit unscaled predictions match saved",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "refit scaled predictions match saved",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "no source-record overlap between train and test",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "no identical predictor rows across train/test",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "scaler statistics come from training rows only",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "split covers every cleaned record exactly once",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "duplicates removed = exact 12-column duplicates in raw file",
+        "passed": true,
+        "detail": "raw 1599, cleaned 1359, exact duplicates 240"
+      },
+      {
+        "check": "no conflicting labels for identical predictors",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "second bootstrap CI agrees with saved bootstrap CI (+/-0.005)",
+        "passed": true,
+        "detail": "mine [0.0382, 0.1456] vs saved [0.03823529411764699, 0.14558823529411757]"
+      }
+    ],
+    "recomputed": {
+      "n_pairs": 272,
+      "mae_unscaled": 0.6316176470588236,
+      "mae_scaled": 0.5397058823529413,
+      "mae_reduction_pct_of_control": 14.551804423748536,
+      "rmse_unscaled": 0.8218522838506858,
+      "rmse_scaled": 0.7129062309432056,
+      "mean_difference": 0.0919117647058823,
+      "sd_difference": 0.45450677164365433,
+      "t": 3.3351486733525415,
+      "df": 271,
+      "p_one_sided": 0.0004857857749028633,
+      "ci_95_two_sided": [
+        0.037655752515157216,
+        0.1461677768966074
+      ],
+      "cohens_dz": 0.20222309202016384,
+      "required_pairs": 155.92567158540498,
+      "design_power_at_assumed_dz": 0.9500543017108094,
+      "improved": 134,
+      "worsened": 94,
+      "tied": 44
+    },
+    "exploratory_sensitivity_not_prespecified": {
+      "wilcoxon_one_sided_p": 0.003289267099376311,
+      "sign_test_one_sided_p": 0.004823301684734695,
+      "paired_t_on_squared_error_one_sided_p": 0.002229422705326354,
+      "second_bootstrap_ci_95": [
+        0.03823529411764702,
+        0.14558823529411757
+      ]
+    },
+    "unscaled_distance_variance_share_top5": {
+      "total sulfur dioxide": 0.9075281608730082,
+      "free sulfur dioxide": 0.08742932327939254,
+      "fixed acidity": 0.0024380997981213568,
+      "residual sugar": 0.001526386976740642,
+      "alcohol": 0.0009747703968849508
+    },
+    "predictor_ranges": {
+      "fixed acidity": {
+        "min": 4.6,
+        "max": 15.9,
+        "std": 1.7369898075324683
+      },
+      "volatile acidity": {
+        "min": 0.12,
+        "max": 1.58,
+        "std": 0.1830313176190719
+      },
+      "citric acid": {
+        "min": 0.0,
+        "max": 1.0,
+        "std": 0.1955365445504638
+      },
+      "residual sugar": {
+        "min": 0.9,
+        "max": 15.5,
+        "std": 1.3523137577104225
+      },
+      "chlorides": {
+        "min": 0.012,
+        "max": 0.611,
+        "std": 0.04937686244348607
+      },
+      "free sulfur dioxide": {
+        "min": 1.0,
+        "max": 72.0,
+        "std": 10.447270259048693
+      },
+      "total sulfur dioxide": {
+        "min": 6.0,
+        "max": 289.0,
+        "std": 33.40894570661652
+      },
+      "density": {
+        "min": 0.99007,
+        "max": 1.00369,
+        "std": 0.0018689171325591413
+      },
+      "pH": {
+        "min": 2.74,
+        "max": 4.01,
+        "std": 0.15503631128729617
+      },
+      "sulphates": {
+        "min": 0.33,
+        "max": 2.0,
+        "std": 0.17066689057420686
+      },
+      "alcohol": {
+        "min": 8.4,
+        "max": 14.9,
+        "std": 1.0820654499402542
+      }
+    }
+  },
+  "white": {
+    "dataset": "white",
+    "all_primary_checks_passed": true,
+    "checks": [
+      {
+        "check": "n pairs",
+        "passed": true,
+        "detail": "793 vs 793"
+      },
+      {
+        "check": "saved difference column = |err unscaled| - |err scaled|",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "mean difference",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "SD of differences",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "t statistic",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "one-sided p-value",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "two-sided 95% CI",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "Cohen's dz",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "MAE (both arms)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "RMSE (both arms)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "reject decision (one-sided alpha)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "required pairs (continuous)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "required pairs (rounded up)",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "design power at assumed dz",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "test set >= required pairs",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "predictions rows are the test split, in order",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "refit unscaled predictions match saved",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "refit scaled predictions match saved",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "no source-record overlap between train and test",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "no identical predictor rows across train/test",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "scaler statistics come from training rows only",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "split covers every cleaned record exactly once",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "duplicates removed = exact 12-column duplicates in raw file",
+        "passed": true,
+        "detail": "raw 4898, cleaned 3961, exact duplicates 937"
+      },
+      {
+        "check": "no conflicting labels for identical predictors",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "second bootstrap CI agrees with saved bootstrap CI (+/-0.005)",
+        "passed": true,
+        "detail": "mine [0.0552, 0.1218] vs saved [0.05523329129886509, 0.12307692307692307]"
+      }
+    ],
+    "recomputed": {
+      "n_pairs": 793,
+      "mae_unscaled": 0.6912988650693569,
+      "mae_scaled": 0.6027742749054225,
+      "mae_reduction_pct_of_control": 12.805545421379056,
+      "rmse_unscaled": 0.8720111988359635,
+      "rmse_scaled": 0.7831774772731558,
+      "mean_difference": 0.08852459016393441,
+      "sd_difference": 0.4864652626143195,
+      "t": 5.124466811144567,
+      "df": 792,
+      "p_one_sided": 1.8759256397764586e-07,
+      "ci_95_two_sided": [
+        0.05461461071548905,
+        0.12243456961237976
+      ],
+      "cohens_dz": 0.1819751521171177,
+      "required_pairs": 155.92567158540498,
+      "design_power_at_assumed_dz": 0.9999658857329762,
+      "improved": 375,
+      "worsened": 266,
+      "tied": 152
+    },
+    "exploratory_sensitivity_not_prespecified": {
+      "wilcoxon_one_sided_p": 1.8782348007989818e-07,
+      "sign_test_one_sided_p": 9.540603799868638e-06,
+      "paired_t_on_squared_error_one_sided_p": 1.4090753646505067e-06,
+      "second_bootstrap_ci_95": [
+        0.055226986128625456,
+        0.12181588902900378
+      ]
+    },
+    "unscaled_distance_variance_share_top5": {
+      "total sulfur dioxide": 0.8573997333709477,
+      "free sulfur dioxide": 0.1304007848408487,
+      "residual sugar": 0.011148178080173833,
+      "alcohol": 0.0006869190248178678,
+      "fixed acidity": 0.0003357205220996008
+    },
+    "predictor_ranges": {
+      "fixed acidity": {
+        "min": 3.8,
+        "max": 14.2,
+        "std": 0.8668597405075877
+      },
+      "volatile acidity": {
+        "min": 0.08,
+        "max": 1.1,
+        "std": 0.10343708697304993
+      },
+      "citric acid": {
+        "min": 0.0,
+        "max": 1.66,
+        "std": 0.12244609076939264
+      },
+      "residual sugar": {
+        "min": 0.6,
+        "max": 65.8,
+        "std": 4.861646307806225
+      },
+      "chlorides": {
+        "min": 0.009,
+        "max": 0.346,
+        "std": 0.023102714803976965
+      },
+      "free sulfur dioxide": {
+        "min": 2.0,
+        "max": 289.0,
+        "std": 17.210020611149623
+      },
+      "total sulfur dioxide": {
+        "min": 9.0,
+        "max": 440.0,
+        "std": 43.129065240251904
+      },
+      "density": {
+        "min": 0.98711,
+        "max": 1.03898,
+        "std": 0.0029045957783314803
+      },
+      "pH": {
+        "min": 2.72,
+        "max": 3.82,
+        "std": 0.15154556715055686
+      },
+      "sulphates": {
+        "min": 0.22,
+        "max": 1.08,
+        "std": 0.11352280532150708
+      },
+      "alcohol": {
+        "min": 8.0,
+        "max": 14.2,
+        "std": 1.2170763113068002
+      }
+    }
+  }
+}
