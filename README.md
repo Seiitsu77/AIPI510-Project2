@@ -118,6 +118,10 @@ requirements.txt          # exact environment dependencies
 CONTRIBUTING.md            # branch and review workflow
 ```
 
+## Preprocessing and feature engineering
+
+All preprocessing is in Python scripts, not notebooks. Cleaning (validation and exact-duplicate removal, before the split) is in `src/wine_scaling/data.py`. The only transformation is `StandardScaler`, the experimental treatment, defined in `src/wine_scaling/models.py` and fit on training data only. The two steps run from `scripts/run_experiment.py`. No other feature engineering was used, by design, since the experiment compares raw features against standardized features.
+
 ## Inspect the saved evidence
 
 Each cohort's `results/` directory contains:
